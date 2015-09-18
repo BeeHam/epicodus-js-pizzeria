@@ -27,3 +27,7 @@ Pizza.prototype.toppingPrice = function() {
     return basePrice + 6
   }
 }
+
+Pizza.prototype.totalPrice = function() {
+  return (this.sizePrice() + this.toppingPrice()) * this.quantity;
+}

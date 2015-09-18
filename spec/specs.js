@@ -15,4 +15,9 @@ describe('Pizza', function() {
     var testPizza = new Pizza('large', 3, 1);
     expect(testPizza.toppingPrice()).to.equal(5);
   });
+
+  it("will create total price for given pizza", function() {
+    var testPizza = new Pizza('large', 3, 2);
+    expect(testPizza.totalPrice()).to.equal(20);
+  });
 });
