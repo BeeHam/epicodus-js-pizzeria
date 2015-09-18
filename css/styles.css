@@ -1,0 +1,33 @@
+body {
+  background-color: cornflowerblue;
+}
+
+#show-order {
+  display: none;
+}
+
+#toppings-field {
+  display: none;
+}
+
+#header {
+  text-align: center;
+  margin-bottom: 4em;
+}
+
+.content {
+  width: 70%;
+  margin: 0 auto;
+  padding: 0.2em 3em 3em;
+  background-color: white;
+}
+
+#show-order {
+  padding: 0.2em 0 0.5em 0.5em;
+  background-color: lightgrey;
+  border: 2px solid darkslategrey;
+}
+
+#order-button {
+  margin-bottom: 0.5em;
+}

@@ -9,7 +9,49 @@
   </head>
   <body>
     <div class="container">
+      <div class="content">
+        <div id="header">
+          <h3>Welcome to</h3>
+          <h1>BeeHam's Pizzeria</h1>
+        </div>
 
+        <h2>Place Order</h2>
+
+        <form id="pizza-order">
+          <div class="form-group">
+            <h4>Pick a Size:</h4>
+            <div class="radio">
+              <label for="small"><input type="radio" name="size" value="small">Small</label>
+              <label for="medium"><input type="radio" name="size" value="medium">Medium</label>
+              <label for="large"><input type="radio" name="size" value="large">Large</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <h4>Toppings</h4>
+            <div class="radio">
+              <label for="one"><input type="radio" name="toppings-number" value="one">One</label>
+              <label for="two"><input type="radio" name="toppings-number" value="two">Two</label>
+              <label for="three"><input type="radio" name="toppings-number" value="three">Three</label>
+              <label for="unlimited"><input type="radio" name="toppings-number" value="unlimited">Unlimited</label>
+            </div>
+            <input type="text" name="toppings-field" id="toppings-field" class="form-control" placeholder="Toppings">
+          </div>
+          <div class="form-group">
+            <h4>Quantity</h4>
+            <input type="text" name="quantity" id="quantity" class="form-control" placeholder="Quantity">
+          </div>
+          <button type="submit" class="btn btn-primary" id="order-button">Place Order</button>
+        </form>
+
+        <div id="show-order">
+          <h3>Order</h3>
+          <p>Size: <span id="size-choice"></span></p>
+          <p>Number of Toppings: <span id="topping-choice"></span></p>
+          <p>Toppings: <span id="toppings-selected"></span></p>
+          <p>Quantity: <span id="quantity-choice"></span></p>
+          <h3 id="total-price"></h3>
+        </div>
+      </div>
     </div>
   </body>
 </html>
