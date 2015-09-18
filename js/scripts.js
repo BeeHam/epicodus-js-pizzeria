@@ -4,16 +4,14 @@ function Pizza(pieSize, numberToppings, quantity) {
   this.quantity = quantity;
 }
 
+var basePrice = 0;
 
-
-
-
-
-
-
-
-// function Ticket(movieRun, showTime, age) {
-//   this.movieRun = movieRun;
-//   this.showTime = showTime;
-//   this.age = parseInt(age);
-// }
+Pizza.prototype.sizePrice = function() {
+  if (this.pieSize === 'small') {
+    return basePrice + 3;
+  } else if (this.pieSize === 'medium') {
+    return basePrice + 4;
+  } else {
+    return basePrice + 5;
+  }
+}
