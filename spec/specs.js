@@ -13,6 +13,6 @@ describe('Pizza', function() {
 
   it("will create price for number of toppings", function() {
     var testPizza = new Pizza('large', 3, 1);
-    expect(testPizza.toppingsPrice()).to.equal(5);
+    expect(testPizza.toppingPrice()).to.equal(5);
   });
 });
